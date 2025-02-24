@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kişisel Sayfam</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Sayfanın üst kısmında büyük fontla başlık ve logo -->
+  <header>
+    <h1>Benim Kişisel Sayfam</h1>
+    <!-- opsiyonel logo (css'de boyutlandırabilirsiniz) -->
+    <img src="images/logo.png" alt="Logo" class="logo">
+  </header>
+
+  <!-- Kendini Tanıtma Bölümü -->
+  <section id="hakkimda">
+    <h2>Hakkımda</h2>
+    <p>Merhaba, ben Furkan Sözkesen. Yazılım ve tasarım konularında tutkuluyum. Kendimi geliştirmek ve yeni projelere imza atmak için sürekli öğreniyorum.</p>
+    <!-- Kendinize ait fotoğraf veya ilgi alanlarını temsil eden bir resim -->
+    <img src="images/profil.jpg" alt="Profil Resmi" class="profil">
+  </section>
+
+  <!-- İletişim Bilgileri -->
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <ul>
+      <li>Email: <a href="mailto:ornek@example.com">ornek@example.com</a></li>
+      <li>Telefon: 0512 345 67 89/li>
+      <li>Sosyal Medya: 
+        <a href="https://www.linkedin.com/in/ornek" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/ornek" target="_blank">GitHub</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Eğitim Bilgileri -->
+  <section id="egitim">
+    <h2>Eğitim</h2>
+    <p><strong>Üniversite:</strong> Örnek Üniversitesi</p>
+    <p><strong>Bölüm:</strong> Bilgisayar Mühendisliği</p>
+  </section>
+
+  <!-- Teknik Beceriler -->
+  <section id="beceriler">
+    <h2>Teknik Beceriler</h2>
+    <ul>
+      <li>HTML &amp; CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+    </ul>
+  </section>
+
+  <!-- Hobiler ve İlgi Alanları -->
+  <section id="hobiler">
+    <h2>Hobiler &amp; İlgi Alanları</h2>
+    <ul>
+      <li>Kitap Okumak</li>
+      <li>Seyahat Etmek</li>
+      <li>Müzik Dinlemek</li>
+    </ul>
+  </section>
+
+  <!-- Kullanıcıların mesaj bırakabileceği form -->
+  <section id="mesaj">
+    <h2>Bana Mesaj Bırakın</h2>
+    <form action="iletisim.php" method="post">
+      <label for="isim">İsim:</label>
+      <input type="text" id="isim" name="isim" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="mesaj">Mesaj:</label>
+      <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+      
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Telif Hakkı 2025 Furkan Sözkkesen</p>
+  </footer>
+</body>
+</html>
